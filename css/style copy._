@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 110px;
+}
+
+.header__logo {
+  display: block;
+  width: 129px;
+  height: 25px;
+  background-image: url(../img/logo.svg);
+  // background-repeat: no-repeat;
+}
+
+.form {
+  position: relative;
+}
+
+.form__button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/search.svg); // background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 10px);
+}
+
+.form__input {
+  width: 384px;
+  background: rgba(255, 225, 255, 0.1);
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: none;
+  color: #fff;
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__link {
+  color: #fff;
+}
+
+.header__link_gradient {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+// ======================= sect
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__text {
+  flex-basis: 490px; //?44:00 retina - too big => squeez
+}
+
+.main__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main__descr {
+  font-style: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5); //? var
+}
+.main__image {
+  flex-basis: calc(100% - 490px); //-116px
+}
+
+.main__btn {
+  font-size: 20px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 225, 255, 0.1);
+  padding: 10px 20px;
+}
+
+.main__btn_gradient {
+  background: linear-gradient(214.02deg #b75cff 6.04%, #671ae4 92.95%);
+  margin-right: 20px;
+}
+
+.main__list {
+  display: flex;
+  text-align: center;
+  gap: 110px;
+}
+
+.main__item {
+  color: rgba(255, 255, 255, 0.5); //? var
+  font-style: 20px;
+}
+
+.main__span {
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main__img {
+  width: 100%;
+}
